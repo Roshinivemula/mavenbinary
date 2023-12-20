@@ -5,15 +5,15 @@ public class BinarySearch {
 	 public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
 
-	        System.out.print("Enter the size of the array: ");
+	        System.out.print("size of the array: ");
 	        int size = scanner.nextInt();
 
 	        int[] array = new int[size];
 
-	        System.out.println("Enter the elements of the array:");
+	        System.out.println("enter the elements:");
 
 	        for (int i = 0; i < size; i++) {
-	            System.out.print("Element " + (i + 1) + ": ");
+	            System.out.print("element :");
 	            array[i] = scanner.nextInt();
 	        }
 	        for (int i = 0; i < size - 1; i++) {
@@ -31,11 +31,11 @@ public class BinarySearch {
 	            System.out.print(array[i] + " ");
 	        }
 	        System.out.println();
-	        System.out.print("Enter the element to search: ");
+	        System.out.print("element to search:");
 	        int target = scanner.nextInt();
 	        int result = BinarySearch.binarySearch(array, target);
 	        if (result != -1) {
-	            System.out.println("Element found at index " + result);
+	            System.out.println("Element found at index"+result);
 	        } else {
 	            System.out.println("Element not found");
 	        }
